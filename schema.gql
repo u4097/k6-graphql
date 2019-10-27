@@ -1,0 +1,16 @@
+type Address {
+  id: ID!
+  aoId: String
+  aoGuid: String
+  offName: String
+  shortName: String
+  liveStatus: String
+  regionCode: String
+  cityCode: String
+  aoLevel: String
+  placeCode: String
+}
+
+type Query {
+  addressByGuid(aoGuid: String): [Address]
+}
